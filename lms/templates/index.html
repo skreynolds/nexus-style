@@ -7,13 +7,13 @@ from openedx.core.djangolib.markup import HTML
 <section class="home">
   <header>
     <div class="outer-wrapper">
-      <div class="title" style="background:rgba(255,255,255,0.5);">
-        <div class="heading-group" style="display:inline;">
+      <div class="title" style="background: rgba(255,255,255,0.5);">
+        <div class="heading-group" style="display: inline;">
           % if homepage_overlay_html:
             ${homepage_overlay_html}
           % else:
-            <h1>${_(HTML("<strong>{university_name}</strong>")).format(university_name="Nexus EdX")}</h1>
-            <p>${_("Be part of a new world university.")}</p>
+            <h1 style="text-align: center;">${_(HTML("<strong>{university_name}</strong>")).format(university_name="Nexus EdX")}</h1>
+            <p style="text-align: center;">${_("Be part of a new world university.")}</p>
           % endif
         </div>
         % if settings.FEATURES.get('ENABLE_COURSE_DISCOVERY'):
