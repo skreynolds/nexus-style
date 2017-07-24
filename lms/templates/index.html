@@ -12,8 +12,8 @@ from openedx.core.djangolib.markup import HTML
           % if homepage_overlay_html:
             ${homepage_overlay_html}
           % else:
-            <h1 style="text-align: center;">${_(HTML("<strong>{university_name}</strong>")).format(university_name="Nexus EdX")}</h1>
-            <p style="text-align: center;">${_("Be part of a new world university.")}</p>
+            <h1 style="text-align: center;">${_(HTML("Welcome to <strong>{university_name}</strong>!")).format(university_name="Nexus EdX")}</h1>
+            <p style="text-align: center;">${_("Think. Learn. Create.")}</p>
           % endif
         </div>
         % if settings.FEATURES.get('ENABLE_COURSE_DISCOVERY'):
